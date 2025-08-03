@@ -3,25 +3,15 @@
 import { motion } from 'framer-motion';
 import {
     Zap,
-    Shield,
     Users,
     Trophy,
     Clock,
     Headphones,
-    Lightbulb,
     Target,
-    CheckCircle
 } from 'lucide-react';
-
-import bg1 from '../../../../public/Assets/bg1.jpg'
-import bg2 from '../../../../public/Assets/bg1.png'
-import bg3 from '../../../../public/Assets/bg5.jpeg'
-import bg4 from '../../../../public/Assets/delevery.png'
-import bg5 from '../../../../public/Assets/desk_bg.jpg'
-import bg6 from '../../../../public/Assets/industry.png'
-import bg7 from '../../../../public/Assets/support.png'
-import bg8 from '../../../../public/Assets/team.png'
 import Image from 'next/image';
+
+// ✅ All images now served from public/assets
 const benefits = [
     {
         id: 1,
@@ -30,7 +20,7 @@ const benefits = [
         icon: Zap,
         color: "text-cyan-400",
         bgColor: "bg-cyan-500/20",
-        bgImage: bg1
+        bgImage: "/assets/bg1.jpg"
     },
     {
         id: 2,
@@ -39,7 +29,7 @@ const benefits = [
         icon: Target,
         color: "text-purple-400",
         bgColor: "bg-purple-500/20",
-        bgImage: bg6
+        bgImage: "/assets/industry.png"
     },
     {
         id: 3,
@@ -48,7 +38,7 @@ const benefits = [
         icon: Clock,
         color: "text-emerald-400",
         bgColor: "bg-emerald-500/20",
-        bgImage: bg4
+        bgImage: "/assets/delevery.png"
     },
     {
         id: 4,
@@ -57,7 +47,7 @@ const benefits = [
         icon: Users,
         color: "text-orange-400",
         bgColor: "bg-orange-500/20",
-        bgImage: bg8
+        bgImage: "/assets/team.png"
     },
     {
         id: 5,
@@ -66,7 +56,7 @@ const benefits = [
         icon: Headphones,
         color: "text-pink-400",
         bgColor: "bg-pink-500/20",
-        bgImage: bg7
+        bgImage: "/assets/support.png"
     },
     {
         id: 6,
@@ -75,32 +65,10 @@ const benefits = [
         icon: Trophy,
         color: "text-yellow-400",
         bgColor: "bg-yellow-500/20",
-        bgImage: bg6
+        bgImage: "/assets/industry.png"
     }
 ];
 
-const stats = [
-    {
-        number: "500+",
-        label: "Projects Completed",
-        description: "Delivered AI solutions"
-    },
-    {
-        number: "98%",
-        label: "Client Satisfaction",
-        description: "Happy customers worldwide"
-    },
-    {
-        number: "150%",
-        label: "Average ROI",
-        description: "Return on investment for clients"
-    },
-    {
-        number: "24/7",
-        label: "Support Available",
-        description: "Round-the-clock assistance"
-    }
-];
 const stats2 = [
     { number: '98%', label: 'Client Satisfaction', description: 'Happy Customers World Wide' },
     { number: '150%', label: 'Average ROI', description: 'Return On Invest for Clients' },
@@ -185,19 +153,14 @@ export default function WhyChooseUs() {
                                 variants={itemVariants}
                                 className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-105 overflow-hidden"
                             >
-                                {/* Background Image using img element for better compatibility */}
+                                {/* Background Image */}
                                 <div className="absolute inset-0 overflow-hidden rounded-2xl">
                                     <Image
                                         src={benefit.bgImage}
                                         alt={benefit.title}
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                        style={{ objectPosition: 'center' }}
-                                        onError={(e) => {
-                                            console.log('Image failed to load:', benefit.bgImage);
-                                            e.target.style.display = 'none';
-                                        }}
-                                        width={100}
-                                        height={100}
+                                        width={800}
+                                        height={600}
                                     />
                                 </div>
 
@@ -234,7 +197,9 @@ export default function WhyChooseUs() {
                         );
                     })}
                 </motion.div>
-                <div className="pt-10  md:pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                {/* Stats */}
+                <div className="pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {stats2.map((stat, index) => (
                         <motion.div
                             key={index}
