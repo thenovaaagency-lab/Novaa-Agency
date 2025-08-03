@@ -10,8 +10,11 @@ import {
     Target,
 } from 'lucide-react';
 import Image from 'next/image';
-
-// ✅ All images now served from public/assets
+import bg1 from '../../Assets/bg1.jpg'
+import industryImage from '../../Assets/industry.png'
+import deleveryImage from '../../Assets/delevery.png'
+import teamImage from '../../Assets/team.png'
+import supportImage from '../../Assets/support.png'
 const benefits = [
     {
         id: 1,
@@ -20,7 +23,7 @@ const benefits = [
         icon: Zap,
         color: "text-cyan-400",
         bgColor: "bg-cyan-500/20",
-        bgImage: "/assets/bg1.jpg"
+        bgImage: bg1
     },
     {
         id: 2,
@@ -29,7 +32,7 @@ const benefits = [
         icon: Target,
         color: "text-purple-400",
         bgColor: "bg-purple-500/20",
-        bgImage: "/assets/industry.png"
+        bgImage: industryImage
     },
     {
         id: 3,
@@ -38,7 +41,7 @@ const benefits = [
         icon: Clock,
         color: "text-emerald-400",
         bgColor: "bg-emerald-500/20",
-        bgImage: "/assets/delevery.png"
+        bgImage: deleveryImage
     },
     {
         id: 4,
@@ -47,7 +50,7 @@ const benefits = [
         icon: Users,
         color: "text-orange-400",
         bgColor: "bg-orange-500/20",
-        bgImage: "/assets/team.png"
+        bgImage: teamImage
     },
     {
         id: 5,
@@ -56,7 +59,7 @@ const benefits = [
         icon: Headphones,
         color: "text-pink-400",
         bgColor: "bg-pink-500/20",
-        bgImage: "/assets/support.png"
+        bgImage: supportImage
     },
     {
         id: 6,
@@ -65,7 +68,7 @@ const benefits = [
         icon: Trophy,
         color: "text-yellow-400",
         bgColor: "bg-yellow-500/20",
-        bgImage: "/assets/industry.png"
+        bgImage: industryImage
     }
 ];
 
