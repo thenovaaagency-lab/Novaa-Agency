@@ -13,14 +13,14 @@ import {
     CheckCircle
 } from 'lucide-react';
 
-import bg1 from '../../Assets/bg1.jpg'
-import bg2 from '../../Assets/bg1.png'
-import bg3 from '../../Assets/bg5.jpeg'
-import bg4 from '../../Assets/delevery.png'
-import bg5 from '../../Assets/desk_bg.jpg'
-import bg6 from '../../Assets/industry.png'
-import bg7 from '../../Assets/support.png'
-import bg8 from '../../Assets/team.png'
+import bg1 from '../../../../public/Assets/bg1.jpg'
+import bg2 from '../../../../public/Assets/bg1.png'
+import bg3 from '../../../../public/Assets/bg5.jpeg'
+import bg4 from '../../../../public/Assets/delevery.png'
+import bg5 from '../../../../public/Assets/desk_bg.jpg'
+import bg6 from '../../../../public/Assets/industry.png'
+import bg7 from '../../../../public/Assets/support.png'
+import bg8 from '../../../../public/Assets/team.png'
 import Image from 'next/image';
 const benefits = [
     {
