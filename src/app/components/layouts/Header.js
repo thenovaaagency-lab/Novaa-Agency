@@ -23,15 +23,29 @@ export default function Header() {
     // Detect active section using IntersectionObserver
     useEffect(() => {
         const sections = NAVIGATION_LINKS.map(link => document.querySelector(link.href));
+
         const observer = new IntersectionObserver(
             (entries) => {
+                // Find the entry with the largest intersection ratio
+                let maxEntry = null;
+                let maxRatio = 0;
+
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(`#${entry.target.id}`);
+                    if (entry.intersectionRatio > maxRatio) {
+                        maxRatio = entry.intersectionRatio;
+                        maxEntry = entry;
                     }
                 });
+
+                // Set active section to the one with the highest visibility
+                if (maxEntry && maxEntry.intersectionRatio > 0.1) {
+                    setActiveSection(`#${maxEntry.target.id}`);
+                }
             },
-            { threshold: 0.5 }
+            {
+                threshold: [0, 0.1, 0.25, 0.5, 0.75, 1.0],
+                rootMargin: '-80px 0px -50% 0px' // Account for header height and better mobile detection
+            }
         );
 
         sections.forEach((section) => {

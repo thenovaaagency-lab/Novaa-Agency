@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { MessageCircle, Phone, MessageSquare, Bot, ArrowRight } from 'lucide-react';
+import { MessageCircle, Phone, MessageSquare, Bot, ArrowRight, LaptopMinimalCheck, LaptopMinimalCheckIcon } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -30,7 +30,7 @@ const services = [
         id: 3,
         title: "Shopify & Web Development",
         description: "High-converting websites built from scratch or on Shopify — tailored to your brand, optimized for performance and user experience.",
-        icon: MessageSquare,
+        icon: LaptopMinimalCheckIcon,
         color: "from-emerald-400 to-teal-500",
         accent: "emerald",
         features: ["Custom Web Design", "Shopify Store Setup", "Responsive & Fast"],
@@ -67,7 +67,7 @@ export default function ServicesOverview() {
     };
 
     return (
-        <section id='services' className="py-20 bg-black/20 relative overflow-hidden">
+        <section id='services' className="container py-20 bg-black/20 relative overflow-hidden">
 
             <div className="container mx-auto px-4 relative z-10">
                 <motion.div
@@ -112,7 +112,7 @@ export default function ServicesOverview() {
                             pauseOnMouseEnter: true,
                         }}
                         loop={true}
-                        speed={1200}
+                        speed={1500}
                         breakpoints={{
                             640: { slidesPerView: 1, spaceBetween: 20 },
                             768: { slidesPerView: 2, spaceBetween: 24 },
@@ -130,7 +130,7 @@ export default function ServicesOverview() {
                                         variants={itemVariants}
                                         animate={floatingAnimation}
                                         style={{ animationDelay: `${index * 0.2}s` }}
-                                        className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col min-h-[350px]"
+                                        className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col min-h-[450px]"
                                     >
                                         {/* Background gradient on hover */}
                                         <div className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>

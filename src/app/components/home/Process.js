@@ -18,7 +18,7 @@ const itemVariants = {
 
 const Process = () => {
     return (
-        <section className='bg-black/20 section-padding'>
+        <section className='bg-black/20 section-padding container'>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"

@@ -36,7 +36,7 @@ export default function HeroSection() {
     };
 
     return (
-        <section id='home' className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
+        <section id='home' className="container relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
             {/* Animated gradient orbs */}
             <motion.div
                 animate={{

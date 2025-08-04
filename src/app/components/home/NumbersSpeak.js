@@ -29,7 +29,7 @@ const statVariants = {
 
 const NumbersSpeak = () => {
     return (
-        <section className="section-padding">
+        <section className="section-padding container">
             {/* Stats Section */}
             <motion.div
                 variants={containerVariants}
