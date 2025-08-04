@@ -22,8 +22,9 @@ const NewsLetter = () => {
                             Get In Touch
                         </h3>
                         <p className="text-blue-100 text-lg mb-12">
-                            Ready to transform your business with AI automation? Let's connect and discuss your vision.
+                            {"Ready to transform your business with AI automation? Let's connect and discuss your vision."}
                         </p>
+
 
                         <div className="relative">
                             {/* Email Display Box */}
