@@ -3,7 +3,6 @@ export const COMPANY_INFO = {
     tagline: "Empowering Brands with AI Automation",
     description: "End-to-end AI solutions for modern businesses",
     email: "thenovaa.agency@gmail.com",
-    phone: "+91 9321515064",
     address: "Mumbai , India",
     social: {
         linkedin: "https://linkedin.com/company/nova-agency",

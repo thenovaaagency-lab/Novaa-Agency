@@ -18,13 +18,13 @@ const itemVariants = {
 
 const Process = () => {
     return (
-        <section className='bg-black/20 section-padding container'>
+        <section className='bg-black/20 section-padding '>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                className=""
+                className="container"
             >
                 <motion.div
                     variants={itemVariants}
@@ -38,7 +38,7 @@ const Process = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
                     {[
                         {
                             step: "01",

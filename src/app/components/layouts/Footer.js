@@ -13,10 +13,9 @@ export default function Footer() {
             title: "Services",
             links: [
                 { href: "#services", label: "AI Chatbots" },
-                { href: "#services", label: "Voice Solutions" },
-                { href: "#services", label: "WhatsApp Automation" },
-                { href: "#services", label: "Custom AI Agents" },
-                { href: "#services", label: "AI Consultation" },
+                { href: "#services", label: "AI Voice Call Solutions" },
+                { href: "#services", label: "Shopify & Web Development" },
+                { href: "#services", label: "AI Workflows Automation" }
             ],
         },
         {
@@ -86,15 +85,6 @@ export default function Footer() {
                                         className="hover:text-white transition-colors"
                                     >
                                         {COMPANY_INFO.email}
-                                    </a>
-                                </div>
-                                <div className="flex items-center text-gray-400">
-                                    <Phone className="w-5 h-5 mr-3 text-blue-500" />
-                                    <a
-                                        href={`tel:${COMPANY_INFO.phone}`}
-                                        className="hover:text-white transition-colors"
-                                    >
-                                        {COMPANY_INFO.phone}
                                     </a>
                                 </div>
                                 <div className="flex items-center text-gray-400">

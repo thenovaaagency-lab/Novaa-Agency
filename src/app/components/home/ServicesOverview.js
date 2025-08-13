@@ -161,7 +161,7 @@ export default function ServicesOverview() {
                                                         key={featureIndex}
                                                         initial={{ opacity: 0, x: -20 }}
                                                         whileInView={{ opacity: 1, x: 0 }}
-                                                        transition={{ delay: featureIndex * 0.1 }}
+                                                        transition={{ delay: featureIndex * 0.3 }}
                                                         className="flex items-center text-gray-700"
                                                     >
                                                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
