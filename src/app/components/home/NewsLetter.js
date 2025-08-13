@@ -13,7 +13,7 @@ const NewsLetter = () => {
     };
 
     return (
-        <section id='contact' className='container'>
+        <section id='contact' className=''>
             {/* Contact Section */}
             <div className="py-16">
                 <div className="container mx-auto px-4">

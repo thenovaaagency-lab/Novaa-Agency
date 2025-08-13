@@ -67,7 +67,7 @@ export default function ServicesOverview() {
     };
 
     return (
-        <section id='services' className="container py-20 bg-black/20 relative overflow-hidden">
+        <section id='services' className="py-20 bg-black/20 relative overflow-hidden">
 
             <div className="container mx-auto px-4 relative z-10">
                 <motion.div
