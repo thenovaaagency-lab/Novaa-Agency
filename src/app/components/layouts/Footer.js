@@ -65,7 +65,7 @@ export default function Footer() {
                                     onClick={(e) => handleScroll(e, "#home")}
                                     className="text-2xl font-bold hover:text-blue-400 transition-colors"
                                 >
-                                    Nova Agency
+                                    Novaa Agency
                                 </button>
                             </div>
                         </div>
