@@ -19,7 +19,7 @@ const services = [
     },
     {
         id: 2,
-        title: "AI Voice Call Solutions",
+        title: "AI Voice Agents",
         description: "Automated voice systems for seamless customer interaction with natural speech recognition and intelligent responses.",
         icon: Phone,
         color: "from-pink-400 to-purple-500",

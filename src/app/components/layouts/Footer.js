@@ -13,7 +13,7 @@ export default function Footer() {
             title: "Services",
             links: [
                 { href: "#services", label: "AI Chatbots" },
-                { href: "#services", label: "AI Voice agents" },
+                { href: "#services", label: "AI Voice Agents" },
                 { href: "#services", label: "Shopify & Web Development" },
                 { href: "#services", label: "AI Workflows Automation" }
             ],
