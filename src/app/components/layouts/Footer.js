@@ -19,7 +19,7 @@ export default function Footer() {
             ],
         },
         {
-            title: "Company",
+            title: "Quick Links",
             links: [
                 { href: "#about", label: "About Us" },
                 { href: "#case-studies", label: "Case Studies" },
