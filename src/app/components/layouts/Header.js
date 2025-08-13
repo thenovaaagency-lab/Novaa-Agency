@@ -85,7 +85,7 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="flex flex-col items-start">
-                            <span className="text-xl font-bold text-white group-hover:text-indigo-200 transition-colors duration-300">Nova Agency</span>
+                            <span className="text-xl font-bold text-white group-hover:text-indigo-200 transition-colors duration-300">Novaa Agency</span>
                             <span className="text-xs text-indigo-300/80 group-hover:text-indigo-200/90 transition-colors duration-300">AI Solutions</span>
                         </div>
                     </button>
