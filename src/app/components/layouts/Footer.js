@@ -21,10 +21,10 @@ export default function Footer() {
         {
             title: "Quick Links",
             links: [
+                { href: "#home", label: "Home" },
                 { href: "#about", label: "About Us" },
-                { href: "#case-studies", label: "Case Studies" },
+                { href: "#services", label: "Services" },
                 { href: "#contact", label: "Contact" },
-                { href: "/careers", label: "Careers" }, // example external page
             ],
         },
     ];
