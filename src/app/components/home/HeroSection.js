@@ -97,7 +97,7 @@ export default function HeroSection() {
                         className="flex justify-center items-center mb-12"
                     >
                         <Link
-                            href="https://cal.com/thenovaaagency-ltqrv8/15min"
+                            href="https://cal.com/thenovaaagency-ltqrv8/30min"
                             target='_blank'
                             rel="noopener noreferrer"
                             className="group bg-gradient-to-r from-blue-400 via-blue-600 to-purple-700 hover:from-blue-400 hover:via-blue-600 hover:to-purple-800 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-purple-500/40 flex items-center relative overflow-hidden text-sm"

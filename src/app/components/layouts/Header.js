@@ -111,7 +111,7 @@ export default function Header() {
                             </button>
                         ))}
                         <a
-                            href="https://cal.com/thenovaaagency-ltqrv8/15min"
+                            href="https://cal.com/thenovaaagency-ltqrv8/30min"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-700 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-600 text-white px-7 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 hover:scale-105 flex items-center gap-2"
@@ -149,7 +149,7 @@ export default function Header() {
                             ))}
                             <div className="px-6 py-4">
                                 <a
-                                    href="https://cal.com/thenovaaagency-ltqrv8/15min"
+                                    href="https://cal.com/thenovaaagency-ltqrv8/30min"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-700 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center justify-center w-full gap-2 hover:scale-105"
